@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Rowman Café</title>
+  <style>
+    /* General Styling */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      color: #f5f5f5;
+      text-align: center;
+  background: url(file:///C:/Users/Dell/Downloads/IMG_3542.jpeg");
+      background-size: cover;
+    }
+
+    .content-box {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 30px;
+      border-radius: 20px;
+      max-width: 800px;
+      margin: 50px auto;
+    }
+
+    .logo {
+      width: 100px;
+      height: auto;
+      margin-bottom: 15px;
+    }
+
+    h1 {
+      color: #ffeb3b;
+      font-size: 40px;
+      letter-spacing: 2px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: #b2dfdb;
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    .menu {
+      background-color: #2c2c2c;
+      padding: 20px;
+      border-radius: 10px;
+      margin: 30px auto;
+      width: 300px;
+    }
+
+    .menu h2 {
+      color: #ff9800;
+    }
+
+    .menu ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .menu li {
+      padding: 10px 0;
+      border-bottom: 1px solid #444;
+      color: #f5f5f5;
+    }
+
+    .quote p {
+      font-size: 20px;
+      font-style: italic;
+      color: #ffffff;
+      margin: 40px 0 20px;
+    }
+
+    .card {
+      width: 250px;
+      margin: 0 auto;
+      padding: 15px;
+      background-color: #424242;
+      border-radius: 12px;
+      box-shadow: 0 0 10px #555;
+    }
+
+    .card h2 {
+      color: #80cbc4;
+    }
+
+    .card p {
+      color: #f48fb1;
+    }
+
+    /* Contact Form Styling */
+    .contact {
+      margin-top: 40px;
+    }
+
+    .contact h2 {
+      color: #ffd54f;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    input, textarea {
+      width: 80%;
+      max-width: 400px;
+      padding: 10px;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+    }
+
+    button {
+      background-color: #ff4081;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    button:hover {
+      background-color: #f50057;
+    }
+
+    @media (max-width: 400px) {
+      .content-box {
+        margin: 20px;
+        padding: 20px;
+      }
+
+      h1 {
+        font-size: 30px;
+      }
+
+      .menu, .card {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="content-box">
+    <img src="https://i.imgur.com/yourImageName.png" alt="Rowman Cafe Logo" class="logo">
+ alt="Rowman Cafe Logo" class="logo">
+
+    <!-- Heading -->
+    <h1>Rowman Café</h1>
+    <p>Your ultimate hangout spot. Relax. Chill. Enjoy Hookah.</p>
+
+    <!-- Menu -->
+    <div class="menu">
+      <h2>Hookah Menu</h2>
+      <ul>
+        <li>Mint Blast</li>
+        <li>Bleeeeeberry Ice</li>
+        <li>Pan Rasna</li>
+        <li>Watermelon Freeze</li>
+      </ul>
+    </div>
+    <div class="quote">
+      <p>✨ Opening Soon – Taste the Vibe ✨</p>
+    </div>
+    <div class="card">
+      <h2>Visit Us</h2>
+      <p>Hyderabad | Telangana</p>
+    </div>
+    <div class="contact">
+      <h2>Contact Us</h2>
+      <form action="https://formspree.io/f/movljrey" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="tel" name="phone" placeholder="Phone Number" required>
+        <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
